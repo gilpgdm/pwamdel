@@ -35,7 +35,6 @@ const ARCHIVOS = [
  "css/material-symbols-outlined.css",
  "css/md-filled-button.css",
  "css/md-filled-text-field.css",
- "css/md-headline.css",
  "css/md-list.css",
  "css/md-menu.css",
  "css/md-outline-button.css",
@@ -83,6 +82,7 @@ const ARCHIVOS = [
  "ungap/custom-elements.js",
  "/"
 ]
+
 // Verifica si el código corre dentro de un service worker.
 if (self instanceof ServiceWorkerGlobalScope) {
  // Evento al empezar a instalar el servide worker,

@@ -142,18 +142,6 @@ class MdAppBar extends HTMLElement {
  }
 
  configurOtros() {
-  const idHeadline = getAttribute(this, "headline")
-  if (idHeadline !== "") {
-   const headline = document.getElementById(idHeadline)
-   if (headline instanceof HTMLHeadingElement) {
-    this._headline = headline
-    if (this.classList.contains("apple") || this.classList.contains("medium")) {
-     headline.classList.add("md-headline", "headline-small")
-    } else {
-     headline.classList.add("md-headline", "headline-medium")
-    }
-   }
-  }
   const idAdicional = getAttribute(this, "adicional")
   if (idAdicional !== "") {
    this._adicional = document.getElementById(idAdicional)

@@ -20,7 +20,7 @@
   },
   {
    "src": "/img/screenshot_vertical.png",
-   "sizes": "502x636",
+   "sizes": "595x644",
    "type": "image/png",
    "form_factor": "narrow",
    "label": "Lista con Material Design 3. (2)"
@@ -29,7 +29,7 @@
  "icons": [
   {
    "purpose": "maskable",
-   "sizes": "2730x2730",
+   "sizes": "3413x3413",
    "src": "img/maskable_icon.png",
    "type": "image/png"
   },
@@ -77,7 +77,7 @@
   },
   {
    "purpose": "any",
-   "sizes": "2730x2730",
+   "sizes": "3413x3413",
    "src": "img/maskable_icon.png",
    "type": "image/png"
   },

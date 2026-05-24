@@ -1,7 +1,5 @@
 /* Definiciones para Material Design 3  */
 @import url(baseline.css);
-/* Fonts utilizados */
-@import url(roboto.css);
 
 html {
  /* Indica los temas del sistema operativo que son soportados. */
@@ -17,35 +15,38 @@ form>section {
  margin-right: auto;
 }
 
-/* Quita un borde rojo que coloca Firefox. */
-:-moz-ui-invalid {
- box-shadow: none;
+/* Fonts utilizados */
+
+/* Definición de Roboto Variable (Normal) */
+@font-face {
+ font-family: 'Roboto';
+ src: url('../fonts/Roboto-VariableFont_wdth,wght.ttf') format('truetype');
+ /* Rango del eje de peso (wght) */
+ font-weight: 100 900;
+ /* Rango del eje de anchura (wdth) */
+ font-stretch: 75% 100%;
+ font-style: normal;
+ /* Mejora el rendimiento de carga de texto */
+ font-display: swap;
 }
 
-body {
- margin: 0;
- font-family: var(--md-sys-typescale-body-large-font);
- font-weight: var(--md-sys-typescale-body-large-weight);
- font-size: var(--md-sys-typescale-body-large-size);
- font-style: var(--md-sys-typescale-body-large-font-style);
- letter-spacing: var(--md-sys-typescale-body-large-tracking);
- line-height: var(--md-sys-typescale-body-large-line-height);
- text-transform: var(--md-sys-typescale-body-large-text-transform);
- text-decoration: var(--md-sys-typescale-body-large-text-decoration);
- color: var(--md-sys-color-on-background);
- background-color: var(--md-sys-color-background);
- /* Las siguientes líneas Evita los cambios de apariencia al cargar estilos y
- + custom elements, que son conocidos como Flash Of Unstyled Content (fouc). */
- /* opacity: 0;
- animation-name: fouc;
- animation-fill-mode: forwards;
- animation-duration: 1.5s; */
+/* Definición de Roboto Variable (Itálica) */
+@font-face {
+ font-family: 'Roboto';
+ src: url('../fonts/Roboto-Italic-VariableFont_wdth,wght.ttf') format('truetype');
+ font-weight: 100 900;
+ font-stretch: 75% 100%;
+ font-style: italic;
+ font-display: swap;
 }
 
-@keyframes fouc {
- to {
-  opacity: 1;
- }
+@font-face {
+ font-family: 'Material Symbols Outlined';
+ font-style: normal;
+ font-display: block;
+ src:
+  url(../fonts/MaterialSymbolsOutlined[FILL\,GRAD\,opsz\,wght].woff2) format('woff2'),
+  url(../fonts/MaterialSymbolsOutlined[FILL\,GRAD\,opsz\,wght].ttf) format('truetype');
 }
 
 html {
@@ -75,7 +76,6 @@ html {
  --imageSize: 3.5rem;
  --videoWidth: 7.125rem;
  --videoHeight: 4rem;
- --scroll-headline-duracion: 2s;
  --md-sys-state-focus-indicator-outer-offset: 0.125rem;
  --md-sys-state-focus-indicator-thickness: 0.1875rem;
  /* Pressed state layer opacity */
@@ -85,6 +85,42 @@ html {
  /* Hover state layer opacity */
  --state-hover-transparency-percentage: 92%;
  background-color: var(--md-sys-color-background);
+}
+
+/* Quita un borde rojo que coloca Firefox. */
+:-moz-ui-invalid {
+ box-shadow: none;
+}
+
+body {
+ margin: 0;
+ font-family: var(--md-sys-typescale-body-large-font);
+ font-weight: var(--md-sys-typescale-body-large-weight);
+ font-size: var(--md-sys-typescale-body-large-size);
+ font-style: var(--md-sys-typescale-body-large-font-style);
+ letter-spacing: var(--md-sys-typescale-body-large-tracking);
+ line-height: var(--md-sys-typescale-body-large-line-height);
+ text-transform: var(--md-sys-typescale-body-large-text-transform);
+ text-decoration: var(--md-sys-typescale-body-large-text-decoration);
+ color: var(--md-sys-color-on-background);
+ background-color: var(--md-sys-color-background);
+}
+
+.material-symbols-outlined {
+ font-family: 'Material Symbols Outlined';
+ font-weight: normal;
+ font-style: normal;
+ font-display: block;
+ font-size: 1.5rem;
+ width: 1.5rem;
+ height: 1.5rem;
+ display: inline-block;
+ line-height: 1;
+ text-transform: none;
+ letter-spacing: normal;
+ word-wrap: normal;
+ white-space: nowrap;
+ direction: ltr;
 }
 
 p {
