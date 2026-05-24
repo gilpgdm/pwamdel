@@ -1,6 +1,3 @@
-/* Definiciones para Material Design 3  */
-@import url(baseline.css);
-
 html {
  /* Indica los temas del sistema operativo que son soportados. */
  color-scheme: light dark;
@@ -50,7 +47,7 @@ form>section {
 }
 
 html {
- --Font: -apple-system, BlinkMacSystemFont, roboto, sans-serif;
+ --Font: -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
  --colIntIos: white;
  --colIntIosOnBk: #2acc2a;
  --colIntIosOnBkFc: #1bbb1b;
