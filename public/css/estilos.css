@@ -37,15 +37,6 @@ form>section {
  font-display: swap;
 }
 
-@font-face {
- font-family: 'Material Symbols Outlined';
- font-style: normal;
- font-display: block;
- src:
-  url(../fonts/MaterialSymbolsOutlined[FILL\,GRAD\,opsz\,wght].woff2) format('woff2'),
-  url(../fonts/MaterialSymbolsOutlined[FILL\,GRAD\,opsz\,wght].ttf) format('truetype');
-}
-
 html {
  --Font: -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
  --colIntIos: white;
@@ -101,23 +92,6 @@ body {
  text-decoration: var(--md-sys-typescale-body-large-text-decoration);
  color: var(--md-sys-color-on-background);
  background-color: var(--md-sys-color-background);
-}
-
-.material-symbols-outlined {
- font-family: 'Material Symbols Outlined';
- font-weight: normal;
- font-style: normal;
- font-display: block;
- font-size: 1.5rem;
- width: 1.5rem;
- height: 1.5rem;
- display: inline-block;
- line-height: 1;
- text-transform: none;
- letter-spacing: normal;
- word-wrap: normal;
- white-space: nowrap;
- direction: ltr;
 }
 
 p {

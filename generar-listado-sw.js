@@ -8,12 +8,17 @@ const OUTPUT_FILE = 'lista_archivos_sw.txt';
 // Restricciones basadas en tus instrucciones (Paso 4)
 const EXCLUDED_DIRS = ['.vscode'];
 const EXCLUDED_FILES = [
+ '.firebaserc',
+ '.gitignore',
  '.htaccess',
  '404.html',
- 'archivos.txt',
- 'instruccionesListadoSw.txt',
+ 'sw.js',
+ 'lista_archivos_sw.txt',
+ 'generar-listado-sw.js',
+ 'firebase.json',
  'jsconfig.json',
- 'sw.js'
+ 'LICENSE',
+ 'README.md',
 ];
 const EXCLUDED_EXTENSIONS = ['.php', '.db'];
 

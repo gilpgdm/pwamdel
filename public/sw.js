@@ -29,6 +29,7 @@ const CACHE = "pwamd"
 const ARCHIVOS = [
  "ayuda.html",
  "css/estilos.css",
+ "css/material-symbols-outlined.css",
  "css/transicion_pestanas.css",
  "favicon.ico",
  "fonts/MaterialSymbolsOutlined[FILL,GRAD,opsz,wght].codepoints",
